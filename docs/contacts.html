@@ -11,15 +11,15 @@
  
 <header class="header ">
 	<div class="header__container container">
-		<a href="./" class="header__logo header__logo_mobile"><img src="./images/logo-page.png " alt=""></a>
+		<a href="./" class="header__logo header__logo_mobile"><img src="./images/logo.png " alt=""></a>
 		<span class="header__mobile-open"></span>
 		<div class="header__wrapper" data-scroll-lock-scrollable>
 			<div class="header__mobile-top">
-				<a href="./" class="header__logo header__logo_mobile"><img src="./images/logo-home.png" alt=""></a>
+				<a href="./" class="header__navi-logo"><img src="./images/logo-white.png" alt=""></a>
 				<span class="header__mobile-close"></span>
 			</div>
 			<div class="header__top">
-				<div class="header__address">БЦ "ГОРИЗОНТ", 1-й Волконский переулок 11, стр 2 &nbsp;|&nbsp; 1 этаж  </div>
+				<div class="header__address">БЦ "ГОРИЗОНТ", 1-й Волконский переулок 11, стр 2, 1 этаж  </div>
 				<div class="header__phones">
 					<a href="tel:+74957677743">+7 (495) 767-77-43</a>
 					<a href="tel:+74957677743">+7 (985) 767 77 43</a>
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="header__bottom">
-				<a href="./" class="header__logo"><img src="./images/logo-page.png " alt=""></a>
+				<a href="./" class="header__logo"><img src="./images/logo.png " alt=""></a>
 				<nav class="header__navi">
 					<ul class="header__menu menu ">
 						<li class="menu__item menu__item_haschild active"><a href="./services.html">услуги</a>
@@ -46,7 +46,7 @@
 								<li class="menu__submenu-item"><a href="/">виниры</a></li>
 							</ul>
 						</li>
-						<li class="menu__item"><a href="./personal.html">врачи</a></li>
+						<li class="menu__item"><a href="./personal.html">персонал</a></li>
 						<li class="menu__item"><a href="./actions.html">акции</a></li>
 						<li class="menu__item"><a href="./reviews.html">отзывы</a></li>
 						<li class="menu__item"><a href="./articles.html">энциклопедия</a></li>
@@ -85,14 +85,15 @@
 <footer class="footer"> 
 	<div class="container">
 		<div class="footer__top">
-			<a href="/" class="footer__logo"><img src="./images/logo-bottom.png" alt=""></a>
+			<a href="/" class="footer__logo"><img src="./images/logo-white.png" alt=""></a>
 			<div class="footer__address">
 				<span>БЦ "ГОРИЗОНТ", 1-й Волконский</span>
-				<span>переулок 11, стр 2 &nbsp;|&nbsp; 1 этаж</span>
+				<span>переулок 11, стр 2, 1 этаж</span>
 			</div>
 			<div class="footer__phones">
-				<a href="tel:+74957677743">+7 (495) 767-77-43</a>
-				<a href="tel:+74957677743">+7 (985) 767 77 43</a>
+				<a href="tel:+74957677743">+7-495-767-77-43</a>
+				<a href="tel:+74957677743">+7-985-767 77 43</a>
+				<a href="tel:+79773330021">+7-977-333-00-21 </a>
 			</div>
 		</div>
 		<div class="footer__bottom">
@@ -109,7 +110,7 @@
 							<li class="menu__submenu-item"><a href="/">виниры</a></li>
 						</ul>
 					</li>
-					<li class="menu__item"><a href="/">врачи</a></li>
+					<li class="menu__item"><a href="/">персонал</a></li>
 					<li class="menu__item"><a href="/">акции</a></li>
 					<li class="menu__item"><a href="/">отзывы</a></li>
 					<li class="menu__item"><a href="/">энциклопедия</a></li>
@@ -119,7 +120,30 @@
 			</nav>
 		</div>
 	</div>
-</footer> 
+</footer>
+
+<div class="modal__hidden">
+	<div id="feedback">
+		<form class="feedback" action="./">
+			<h3 class="feedback__title">Оставьте ваш отзыв</h3>
+			<div class="feedback__alert">
+				<!-- <h2>Спасибо!<br>Заявка отправлена</h2><span>Наш специалист перезвонит вам в ближайшее время, чтобы ответить на вопросы</span> -->
+			</div>
+			<div class="feedback__fields">
+				<input class="feedback__input" type="text" name="feedback_name" placeholder="Ваше имя" autocomplete="off">
+				<input class="feedback__input" type="tel" name="feedback_phone" placeholder="Ваш телефон" autocomplete="off">
+				<input class="feedback__input" type="text" name="feedback_address">
+				<textarea class="feedback__textarea" name="feedback_message" placeholder="Ваш отзыв"></textarea>
+			</div>
+			<div class="feedback__agree">
+				<input type="checkbox" name="feedback_agree" checked>
+				<p>I agree with the terms of <a href="./">personal data processing</a></p>
+			</div>
+			<input class="feedback__submit" type="submit" value="Leave order">
+		</form>
+	</div>
+</div>
+
 <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
 <script src="common.js"></script> 
 </body> 
